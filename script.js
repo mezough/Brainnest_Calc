@@ -67,7 +67,7 @@ function calculateResult(firstOperand, secondOperand, operator) {
             return firstOperand * secondOperand;
         case '/':
             const result = firstOperand / secondOperand;
-            return isFinite(result) ? result.toFixed(10) : 'Error';
+            return isFinite(result) ? result.toFixed(4) : 'Error';
         default:
             return null;
     }
